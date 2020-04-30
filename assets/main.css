@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+
+.body {
+    background-color: #F0F8FF;
+    width: 80%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    justify-content: space-evenly;
+    width: 70%;
+    margin: auto;
+    background-color: #303030;
+    padding: 10px;
+}
+
+
+.grid-item { 
+    border: #70ae98 solid 1px;
+    border-radius: 25px;
+    padding: 10px;
+    height: 200px;
+    width: 200px;
+}
+
+.centered-btn {
+    margin-left: 42%;
+    padding: 10px;
+}
+
+.centered-btn button {
+    width: 200px;
+    height: 75px;
+    border: #70ae98 solid 1px;
+    border-radius: 25px;
+
+    
+}
