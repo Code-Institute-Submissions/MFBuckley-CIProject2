@@ -38,15 +38,15 @@ Increase the number of rounds that can be played overall.
 
 ## Technologies Used
 
-*[HTML](https://html.spec.whatwg.org/)
-    *used to create the web page, to arrange graphics on a webpage, 
+* [HTML](https://html.spec.whatwg.org/)
+    * used to create the web page, to arrange graphics on a webpage, 
     to link to different pages within a website.
 
-*[CSS](https://www.w3.org/Style/CSS/Overview.en.html)
+* [CSS](https://www.w3.org/Style/CSS/Overview.en.html)
     * for adding style to web documents
 
-*[Javascript](https://www.javascript.com/)
-    *used for creating responsive, interactive web page, enhancing user experience.
+* [Javascript](https://www.javascript.com/)
+    * used for creating responsive, interactive web page, enhancing user experience.
 
 ## Testing
 [HTML Validator](https://validator.w3.org/)
