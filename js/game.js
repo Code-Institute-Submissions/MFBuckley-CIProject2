@@ -68,16 +68,18 @@ function play() {
     intervalID = setInterval(gameTurn, 1000); //flashes every 1000ms until interval is cleared (when all lights have flashed)
 }
 
+
+//whose turn is it? 
 function gameTurn() {
     on = false;
-
+//players turn
     if (flash == turn) {
         clearInterval(intervalId);
         compTurn = false;
         clearColor();
         on = true;
     }
-
+//computers turn
     if (compTurn) {
         clearColor();
         setTimeout(() => {
@@ -136,7 +138,7 @@ function clearColor(){
 
 function flashColor(){
     topLeft.style.backgroundColor = "lightgreen";
-    topRight.style.backgroundColor = "dc143c";
+    topRight.style.backgroundColor = "#dc143c";
     bottomLeft.style.backgroundColor = "#eee8aa";
     bottomRight.style.backgroundColor = "#B0E0E6";
 
@@ -197,14 +199,14 @@ bottomRight.addEventListener('click', (event) => {
 function check() {
     if (playerOrder[playerOrder.length - 1] !== order[playerOrder.length - 1]) 
     good = false;
-//player completes 20 rounds correctly
-    if (playerOrder.length == 20 && good == true) {
+//player completes 10 rounds correctly
+    if (playerOrder.length == 10 && good == true) {
         winGame(); 
     }
   //player clicks a color incorrectly "No" appears in counter
     if (good == false) {
         flashColor();
-        turnCounter.innerHTML = "NO";
+        turnCounter.innerHTML = "X";
         setTimeout(() => {
             turnCounter.innerHTML = turn;
             clearColor();
