@@ -39,11 +39,11 @@ Increase the number of rounds that can be played overall.
 ## Technologies Used
 
 * [HTML](https://html.spec.whatwg.org/)
-    * used to create the web page, to arrange graphics on a webpage, 
-    to link to different pages within a website.
+    * used to create the web page, to arrange graphics on the webpage, 
+    to link to different pages within the website.
 
 * [CSS](https://www.w3.org/Style/CSS/Overview.en.html)
-    * for adding style to web documents
+    * for adding style to web documents.
 
 * [Javascript](https://www.javascript.com/)
     * used for creating responsive, interactive web page, enhancing user experience.
@@ -57,17 +57,17 @@ Increase the number of rounds that can be played overall.
 
 ## Deployment
 
-Github Pages
+Github Pages.
 
 ## Credits
 
 ### Content
 
-Got some help from this Youtube [source](https://www.youtube.com/watch?v=n_ec3eowFLQ)
+Got some help from this Youtube [source](https://www.youtube.com/watch?v=n_ec3eowFLQ).
 
 ### Media
 
-Bell tones downloaded [here](https://freesound.org/)
+Bell tones downloaded [here](https://freesound.org/).
 
 ### Acknowledgements
 
