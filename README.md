@@ -23,6 +23,8 @@ in the correct order to make it to the next level.
 
 Strict mode causes the game to reset to the very start if an error is made by the player.
 
+Instructions modal button in top left corner of page.
+
 ## Existing Features
 
 Audio/visual user interacton features via .wav files and "flashing" colored quadrants in a randomised sequence.
@@ -32,7 +34,7 @@ Instructions button opens a text box to reveal the simple rules of the game.
 
 
 ### Features left to implement
-
+Quadrant borders light up on hover.
 Replace checkboxes with slide buttons.
 Increase the number of rounds that can be played overall.
 
@@ -49,6 +51,7 @@ Increase the number of rounds that can be played overall.
     * used for creating responsive, interactive web page, enhancing user experience.
 
 ## Testing
+
 [HTML Validator](https://validator.w3.org/)
 
 Validated by direct input.
@@ -78,6 +81,12 @@ Validated by direct input.
 "Element head is missing a required instance of child element title."
 
 [Javascript Validator](https://jasmine.github.io/)
+
+
+
+Instructions modal button opens and closes as expected.
+Both Power and Start buttons needed to start game.
+Counter incrementing by 1.
 
 ## Deployment
 

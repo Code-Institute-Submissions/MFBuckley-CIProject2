@@ -61,12 +61,12 @@ function play() {
     good = true;
     // fill order array with random number between 1 and 4
     for (var i = 0; i < 10; i++) {
-        order.push(Math.floor(Math.random() * 4) + 1) //Math.floor rounds down decimal
+        order.push(Math.floor(Math.random() * 4)) //Math.floor rounds down decimal to nearest integer. Math.random returns a random number between 0 (inclusive) and 1 (exclusive)
     }
     compTurn = true;
 
-    intervalID = setInterval(gameTurn, 1100); //flashes every 1100ms until interval is cleared (when all lights have flashed)
-}
+    intervalId = setInterval(gameTurn, 1100); //flashes every 1100ms until interval is cleared (when all lights have flashed)
+};
 
 
 //whose turn is it? 
@@ -88,7 +88,7 @@ function gameTurn() {
             if (order[flash] == 3) three();//yellow flashes
             if (order[flash] == 4) four(); //blue flashes
             flash++;
-        },500);
+        },1000);
     }
 }
 
@@ -152,7 +152,7 @@ topLeft.addEventListener('click', (event) => {
         if(!win) {
             setTimeout(() => {
                 clearColor();
-            }, 500);
+            }, 1000);
         }
     }
 });
@@ -165,7 +165,7 @@ topRight.addEventListener('click', (event) => {
         if(!win) {
             setTimeout(() => {
                 clearColor();
-            }, 500);
+            }, 1000);
         }
     }
 });
@@ -178,7 +178,7 @@ bottomLeft.addEventListener('click', (event) => {
         if(!win) {
             setTimeout(() => {
                 clearColor();
-            }, 500);
+            }, 1000);
         }
     }
 });
@@ -191,7 +191,7 @@ bottomRight.addEventListener('click', (event) => {
         if(!win) {
             setTimeout(() => {
                 clearColor();
-            }, 500);
+            }, 1000);
         }
     }
 });
@@ -203,10 +203,9 @@ function check() {
     if (playerOrder.length == 10 && good == true) {
         winGame(); 
     }
-  //player clicks a color incorrectly "NO" appears in counter
+  //player clicks a color incorrectly all quadrants flash 
     if (good == false) {
         flashColor();
-        turnCounter.innerHTML = "NO";
         setTimeout(() => {
             turnCounter.innerHTML = turn;
             clearColor();
@@ -243,7 +242,7 @@ function winGame() {
 }
 
 
-//--------------------------------Modal Instructions button interaction
+//--------------------------------Modal Instructions Open & Close button interaction
 
 //Get Modal Element
 let modal = document.getElementById('simpleModal');
