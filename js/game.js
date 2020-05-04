@@ -241,3 +241,31 @@ function winGame() {
     on = false;
     win = true;
 }
+
+
+//--------------------------------Modal Instructions button interaction
+
+//Get Modal Element
+let modal = document.getElementById('simpleModal');
+
+//Get open modal button
+let modalBtn = document.getElementById('modalBtn');
+
+//Get close modal button
+let closeBtn = document.getElementById('closeBtn');
+
+//Listen for click on modal button (Open Instructions)
+modalBtn.addEventListener('click', openModal);
+
+//Listen for click on close button
+closeBtn.addEventListener('click', closeModal);
+
+//Function to open modal
+function openModal(){
+    modal.style.display = 'block';
+}
+
+//Function to close modal
+function closeModal(){
+    modal.style.display = 'none';
+}

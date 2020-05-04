@@ -3,25 +3,66 @@
 
 body {
     background-color: #333;
+    font-family: 'Electrolize', 'Courier New';
 }
 /*---------------------------Positioning checkboxes-------------------*/
 .toggle {
   margin-left: 20px;
   margin-right: 20px;
 }
-/*----------------------------------------Start Button Styling*/
+
+/*------------------------------Modal Instructions Button and Overlay---------------*/
+
+.instructions-btn {
+    font-family: 'Electrolize', 'Courier New';
+    background-color: #c0c0c0;
+    border: 3px solid #d3d3d3;
+    text-align: center;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.instructions-btn:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.2), 0 17px 50px 0 rgba(0, 0, 0, 0.2);
+}
+.modal-content {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 40%;
+    width: 30%;
+    overflow: auto; /*----enables scrollbar if needed----*/
+    background-color: goldenrod;
+}
+
+
+
+.close-modal {
+    float: right;
+    cursor: pointer;
+    padding: 5px;
+    color: #ccc;
+}
+
+.close-modal:hover {
+    background-color:#333;
+}
+/*----------------------------------------Start Button Styling---*/
 .button {
   border: solid 2px #E8E8E8;
   border-radius: 10px;
   font-size: 1.5em;
   background-color: lightgray;
   cursor: pointer;
+  font-family: 'Electrolize', 'Courier New';
+  text-decoration: none;
 }
 
 /*-----------------------------------------Power Checkbox & Strict Mode Styling */
 #switches {
   position: absolute;
-  font-family: 'Electrolize', 'Courier New';
   margin-left: 26px;
   margin-top: 110px;
   
@@ -30,25 +71,22 @@ body {
 /*-------------------Styling the word "COUNT"-------------------*/
 .text2 {
   position: absolute;
-  font-family: 'Electrolize', 'Courier New';
   margin-left: 88px;
   margin-top: 200px;
 }
 /*---------------------------Styling the words "POWER" and "STRICT"--*/
 .text1 {
   position: absolute;
-  font-family: 'Electrolize', 'Courier New';
   margin-left: 20px;
   margin-top: 142px;
 }
-/*------------Pushing the word "STRICT" 70px to left of the word "POWER"---*/
+/*------------Pushing the word "STRICT" 80px to left of the word "POWER"---*/
 .text1 span:last-child {
-  padding-left: 70px;
+  padding-left: 80px;
 }
 
 /*--------------------------Styling for word SIMONE - name of game in centre*/
 #title {
-  font-family: 'Electrolize', 'Courier New';
   position: absolute;
   font-size: 40px;
   margin-left: 35px;
