@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
 
+
 body {
     background-color: #333;
 }
@@ -14,6 +15,7 @@ body {
   border-radius: 10px;
   font-size: 1.5em;
   background-color: lightgray;
+  cursor: pointer;
 }
 
 /*-----------------------------------------Power Checkbox & Strict Mode Styling */
@@ -22,9 +24,10 @@ body {
   font-family: 'Electrolize', 'Courier New';
   margin-left: 26px;
   margin-top: 110px;
+  
 }
 
-/*-------------------Sty;ing the word "COUNT"-------------------*/
+/*-------------------Styling the word "COUNT"-------------------*/
 .text2 {
   position: absolute;
   font-family: 'Electrolize', 'Courier New';
@@ -79,6 +82,7 @@ body {
   border-style: solid;
   border-width: 10px; 
   box-shadow: 8px 8px 15px 5px #888888;
+
 }
 /*--------------------------------------Green Quadrant----------*/
 #topleft {
@@ -171,12 +175,10 @@ body {
 
 /*----------------------------------Responsive Design-------------*/
 
-@media only screen and (max-width: 600px) {
-    #outer-circle {
-        margin: auto;
-        margin-top: 100px;  
-        box-shadow: none;    
-    }
-   
+@media all and (max-width: 600px) {
+   body {
+       width: 70%;
+       height: 70%;
+   }
 
 }
