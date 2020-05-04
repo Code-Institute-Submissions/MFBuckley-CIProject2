@@ -12,7 +12,7 @@ let win; //has player won game?
 
 //reference HTML element with css selector
 
-const turnCounter = document.querySelector("#turn"); //pass in css selector
+const turnCounter = document.querySelector("#turn"); //pass in css selector with query Selector
 const topLeft = document.querySelector("#topleft");
 const topRight = document.querySelector("#topright");
 const bottomLeft = document.querySelector("#bottomleft");
@@ -30,7 +30,7 @@ strictButton.addEventListener('click', (event) => {
     }
 });
 
-//Turn power button on to reveals underscore in Counter
+//Turn power button on reveals underscore in Counter
 onButton.addEventListener('click', (event) => {
     if(onButton.checked == true) {
         on = true;
@@ -38,7 +38,6 @@ onButton.addEventListener('click', (event) => {
     } else {
         on = false;
         turnCounter.innerHTML = "";
-        clearColor(); //Clears any lights that may have flashed at end of game
         clearInterval(intervalId);
     }
 });
@@ -81,7 +80,7 @@ function gameTurn() {
     }
 //computers turn
     if (compTurn) {
-        clearColor();
+        clearColor(); //clears last clicked color by player
         setTimeout(() => {
             if (order[flash] == 1) one();//green flashes
             if (order[flash] == 2) two(); //red flashes
@@ -92,6 +91,7 @@ function gameTurn() {
     }
 }
 
+//Adds sounds to light flashes green turns light green for 1s and bicycle bell sounds etc.
 function one() {
     if (sound) {
         let audio = document.getElementById("clip1");
@@ -128,6 +128,7 @@ function four() {
     bottomRight.style.backgroundColor = "#B0E0E6";
 }
 
+//Returns colors to original state
 function clearColor(){
     topLeft.style.backgroundColor = "darkgreen";
     topRight.style.backgroundColor = "darkred";
@@ -136,6 +137,7 @@ function clearColor(){
 
 }
 
+// Changes colors from original state to temporary state
 function flashColor(){
     topLeft.style.backgroundColor = "lightgreen";
     topRight.style.backgroundColor = "#dc143c";
@@ -213,7 +215,7 @@ function check() {
             if (strict) {
                 play();
             } else {
-                compTurn =true;
+                compTurn = true;
                 flash = 0;
                 playerOrder = [];
                 good = true;
