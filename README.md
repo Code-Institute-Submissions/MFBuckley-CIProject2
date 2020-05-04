@@ -63,7 +63,11 @@ Github Pages.
 
 ### Content
 
-Got some help from this Youtube [source](https://www.youtube.com/watch?v=n_ec3eowFLQ).
+Youtube: 
+
+[Source 1](https://www.youtube.com/watch?v=n_ec3eowFLQ). Helped while creating the game initially.
+
+[Source 2](https://www.youtube.com/watch?v=6ophW7Ask_0). Helped when creating modal button for game instructions.
 
 ### Media
 
