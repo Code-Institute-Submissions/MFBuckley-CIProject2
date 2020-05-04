@@ -80,7 +80,7 @@ Validated by direct input.
 
 "Element head is missing a required instance of child element title."
 
-[Javascript Validator](https://jasmine.github.io/)
+
 
 
 
