@@ -76,7 +76,7 @@ Validated by direct input.
 
 2 Errors found:
 
-"Non-space characters found without seeing a doctype first. Expected <!DOCTYPE html>."
+"Non-space characters found without seeing a doctype first. Expected DOCTYPE html tag."
 
 "Element head is missing a required instance of child element title."
 
@@ -87,6 +87,7 @@ Validated by direct input.
 Instructions modal button opens and closes as expected.
 Both Power and Start buttons needed to start game.
 Counter incrementing by 1.
+Game currently not running beyond level 2. Play and check functions need to be looked at again.
 
 ## Deployment
 
