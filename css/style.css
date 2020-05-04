@@ -3,12 +3,12 @@
 body {
     background-color: #333;
 }
-
+/*---------------------------Positioning checkboxes-------------------*/
 .toggle {
   margin-left: 20px;
   margin-right: 20px;
 }
-
+/*----------------------------------------Start Button Styling*/
 .button {
   border: solid 2px #E8E8E8;
   border-radius: 10px;
@@ -16,6 +16,7 @@ body {
   background-color: lightgray;
 }
 
+/*-----------------------------------------Power Checkbox & Strict Mode Styling */
 #switches {
   position: absolute;
   font-family: 'Electrolize', 'Courier New';
@@ -23,24 +24,26 @@ body {
   margin-top: 110px;
 }
 
+/*-------------------Sty;ing the word "COUNT"-------------------*/
 .text2 {
   position: absolute;
   font-family: 'Electrolize', 'Courier New';
   margin-left: 88px;
   margin-top: 200px;
 }
-
+/*---------------------------Styling the words "POWER" and "STRICT"--*/
 .text1 {
   position: absolute;
   font-family: 'Electrolize', 'Courier New';
   margin-left: 20px;
   margin-top: 142px;
 }
-
+/*------------Pushing the word "STRICT" 70px to left of the word "POWER"---*/
 .text1 span:last-child {
   padding-left: 70px;
 }
 
+/*--------------------------Styling for word SIMONE - name of game in centre*/
 #title {
   font-family: 'Electrolize', 'Courier New';
   position: absolute;
@@ -49,6 +52,7 @@ body {
   margin-top: 40px;
 }
 
+/*----------------------------------------- Turn Counter Styling*/
 #turn {
   position: absolute;
   background: #330000;
@@ -63,20 +67,20 @@ body {
   vertical-align: middle;
   line-height: 30px;
 }
-
+/*--------------------Thick, dark outer circle------------------------*/
 #outer-circle {
   background: #385a94;
   border-radius: 50%;
-  height: 500px;
+  margin: auto;
+  margin-top: 100px;
   width: 500px;
+  height: 500px;
   position: relative;
   border-style: solid;
-  border-width: 10px;
-  margin: auto;
-  margin-top: 60px;
+  border-width: 10px; 
   box-shadow: 8px 8px 15px 5px #888888;
 }
-
+/*--------------------------------------Green Quadrant----------*/
 #topleft {
   position: absolute;
   height: 250px;
@@ -94,7 +98,7 @@ body {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
-
+/*----------------------------------------------Red Quadrant--------*/
 #topright {
   position: absolute;
   height: 250px;
@@ -112,7 +116,7 @@ body {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
-
+/*--------------------------------------Goldenrod QUadrant*/
 #bottomleft {
   position: absolute;
   height: 250px;
@@ -130,7 +134,7 @@ body {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
-
+/*-------------------------------Dark Blue Quadrant----------*/
 #bottomright {
   position: absolute;
   height: 250px;
@@ -148,7 +152,7 @@ body {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
-
+/*-----------------------------------Thick dark innercircle-----*/
 #inner-circle {
   position: absolute;
   background: grey;
@@ -163,4 +167,16 @@ body {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+}
+
+/*----------------------------------Responsive Design-------------*/
+
+@media only screen and (max-width: 600px) {
+    #outer-circle {
+        margin: auto;
+        margin-top: 100px;  
+        box-shadow: none;    
+    }
+   
+
 }

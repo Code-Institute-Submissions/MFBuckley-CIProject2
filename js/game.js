@@ -60,12 +60,12 @@ function play() {
     turnCounter.innerHTML = 1;
     good = true;
     // fill order array with random number between 1 and 4
-    for (var i = 0; i < 20; i++) {
+    for (var i = 0; i < 10; i++) {
         order.push(Math.floor(Math.random() * 4) + 1) //Math.floor rounds down decimal
     }
     compTurn = true;
 
-    intervalID = setInterval(gameTurn, 1000); //flashes every 1000ms until interval is cleared (when all lights have flashed)
+    intervalID = setInterval(gameTurn, 1100); //flashes every 1100ms until interval is cleared (when all lights have flashed)
 }
 
 
@@ -84,11 +84,11 @@ function gameTurn() {
         clearColor();
         setTimeout(() => {
             if (order[flash] == 1) one();//green flashes
-            if (order[flash] == 2) two();
-            if (order[flash] == 3) three();
-            if (order[flash] == 4) four();
+            if (order[flash] == 2) two(); //red flashes
+            if (order[flash] == 3) three();//yellow flashes
+            if (order[flash] == 4) four(); //blue flashes
             flash++;
-        },200);
+        },500);
     }
 }
 
@@ -152,7 +152,7 @@ topLeft.addEventListener('click', (event) => {
         if(!win) {
             setTimeout(() => {
                 clearColor();
-            }, 300);
+            }, 500);
         }
     }
 });
@@ -165,7 +165,7 @@ topRight.addEventListener('click', (event) => {
         if(!win) {
             setTimeout(() => {
                 clearColor();
-            }, 300);
+            }, 500);
         }
     }
 });
@@ -178,7 +178,7 @@ bottomLeft.addEventListener('click', (event) => {
         if(!win) {
             setTimeout(() => {
                 clearColor();
-            }, 300);
+            }, 500);
         }
     }
 });
@@ -191,7 +191,7 @@ bottomRight.addEventListener('click', (event) => {
         if(!win) {
             setTimeout(() => {
                 clearColor();
-            }, 300);
+            }, 500);
         }
     }
 });
@@ -203,10 +203,10 @@ function check() {
     if (playerOrder.length == 10 && good == true) {
         winGame(); 
     }
-  //player clicks a color incorrectly "No" appears in counter
+  //player clicks a color incorrectly "NO" appears in counter
     if (good == false) {
         flashColor();
-        turnCounter.innerHTML = "X";
+        turnCounter.innerHTML = "NO";
         setTimeout(() => {
             turnCounter.innerHTML = turn;
             clearColor();
@@ -218,9 +218,9 @@ function check() {
                 flash = 0;
                 playerOrder = [];
                 good = true;
-                intervalId = setInterval(gameTurn, 1000);
+                intervalId = setInterval(gameTurn, 1100);
             }
-        }, 1000);
+        }, 1100);
 
         sound = false;
     }
@@ -232,7 +232,7 @@ function check() {
         compTurn = true;
         flash = 0;
         turnCounter.innerHTML = turn;
-        intervalId = setInterval(gameTurn, 1000);
+        intervalId = setInterval(gameTurn, 1100);
 }
 
 function winGame() {
