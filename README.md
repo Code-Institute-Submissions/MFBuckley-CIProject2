@@ -51,7 +51,31 @@ Increase the number of rounds that can be played overall.
 ## Testing
 [HTML Validator](https://validator.w3.org/)
 
+Validated by direct input.
+
+2 Warnings found: 
+
+"Consider adding a lang attribute to the html start tag to declare the language of this document."
+
+"The document is not mappable to XML 1.0 due to two consecutive hyphens in a comment."
+
+1 Error found:
+
+"Stray end tag source."
+
 [CSS Validator](https://jigsaw.w3.org/css-validator/)
+
+Validated by direct input.
+
+1 Warning found:
+
+"This document appears to be written in English. Consider adding lang="en" (or variant) to the html start tag."
+
+2 Errors found:
+
+"Non-space characters found without seeing a doctype first. Expected <!DOCTYPE html>."
+
+"Element head is missing a required instance of child element title."
 
 [Javascript Validator](https://jasmine.github.io/)
 
