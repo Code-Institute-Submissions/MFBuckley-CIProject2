@@ -1,9 +1,12 @@
 # Interactive Frontend Project - Milestone Project 2 - Code Institute, Dublin, Ireland
 
-A computerised version of a game of Simon - an interactive audio/visual game. A series of tones and lights are generated randomly by the computer. A player is rerquired to repeat the sequence correctly. 
+## User Story
+As a site editor I want to create a computerised version of a game of Simon - an interactive audio/visual game - to practice my coding skills and have a little fun. 
+The game begins when a series of tones and lights are generated randomly by the computer.
+A player is required to repeat the sequence correctly. 
 If the player succeeds, each round becomes progressively longer and more complex.
-Depending on which mode is played, if the user fails the game is over and the player must start all over again(strict mode) or 
-further attempts at the level are possible until successful (non-strict mode).
+Depending on which mode is played, if the user fails, the game is over and the player must start all over again(strict mode) or in non-strict mode
+further attempts at the level are possible until successful.
 
 ## Game Instructions
 
