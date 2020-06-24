@@ -63,7 +63,7 @@ Validated by direct input.
 
 "The document is not mappable to XML 1.0 due to two consecutive hyphens in a comment."
 
-This warning occurs because of the format of comments in the html codein index.html.
+This warning occurs because of the format of comments in the html5 code in index.html.
 Comments are designed in this way to both separate blocks of code for easier reading and to explain what each block of code does.
 As the document will not be mapped to XML 1.0 - this warning is not a major issue here.
 
@@ -76,14 +76,12 @@ No errors found.
 
 
 
-Instructions modal button opens and closes as expected.
-Both Power and Start buttons needed to start game.
-Counter incrementing by 1.
+
 Game currently not running beyond level 2. Play and check functions need to be looked at again.
 
 ## Deployment
 
-Github Pages. Full details on how to deploy a github repository to Github Pages may be found [here](https://help.github.com/en/github/working-with-github-pages/creating-a-github-pages-site).
+This project was deployed to Github Pages. Full details on how to deploy a github repository to Github Pages may be found [here](https://help.github.com/en/github/working-with-github-pages/creating-a-github-pages-site).
 
 ## Credits
 
@@ -94,6 +92,9 @@ Youtube:
 [Source 1](https://www.youtube.com/watch?v=n_ec3eowFLQ). Helped while creating the game initially.
 
 [Source 2](https://www.youtube.com/watch?v=6ophW7Ask_0). Helped when creating modal button for game instructions.
+
+[Materialize CSS](https://www.youtube.com/watch?v=gCZ3y6mQpW0). Learned how to use Materialize CSS froma series of youtube videos made by "The Net Ninja". 
+See link provided for the first video in the series.
 
 ### Media
 

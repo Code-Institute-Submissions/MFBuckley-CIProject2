@@ -4,26 +4,27 @@
 body {
     background-color: #333;
     font-family: 'Electrolize', 'Courier New';
-}
-/*---------------------------Positioning checkboxes-------------------*/
-.toggle {
-  margin-left: 20px;
-  margin-right: 20px;
+    color: #333;
 }
 
-/*------------------------------Modal Instructions Button---------------*/
 
-.instructions-btn {
+
+/*------------------------------Modal Instructions & Start Button Styling---------------*/
+
+.btn, .btn-small {
     font-family: 'Electrolize', 'Courier New';
     background-color: #c0c0c0;
     border: 3px solid #d3d3d3;
     text-align: center;
-    font-size: 1.5em;
+    margin: 8px;
+    font-size: 1.5rem;
     cursor: pointer;
+    color: #333;
+    
 }
 
-.instructions-btn:hover {
-    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.2), 0 17px 50px 0 rgba(0, 0, 0, 0.2);
+.btn:hover, .btn-small:hover {
+    background-color: #e0e0e0;
 }
 
 /*------------Modal content i.e the instructions do not display initially--*/
@@ -51,89 +52,45 @@ body {
 .close-modal:hover {
     background-color:#333;
 }
-/*----------------------------------------Start Button Styling---*/
-.button {
-  border: solid 2px #E8E8E8;
-  border-radius: 10px;
-  font-size: 1.5em;
-  background-color: lightgray;
-  cursor: pointer;
-  font-family: 'Electrolize', 'Courier New';
-  text-decoration: none;
+
+
+
+/*--------------------Power Mode Checkbox & Strict Mode Checkbox Positioning-- */
+.switch {
+    padding: 5px;
 }
 
-/*--------------------------------------Power Checkbox & Strict Mode Checkbox Positioning-- */
-#switches {
-  position: absolute;
-  margin-left: 26px;
-  margin-top: 110px;
-  
+
+
+/*----------------------Styling labels "Power Mode" and "Strict Mode"--*/
+
+label {
+    color: #333;
 }
 
-/*-------------------Positioning the word "COUNT"-------------------*/
-.text2 {
-  position: absolute;
-  margin-left: 88px;
-  margin-top: 200px;
-}
-/*---------------------------Positioning the words "POWER" and "STRICT"--*/
-.text1 {
-  position: absolute;
-  margin-left: 20px;
-  margin-top: 142px;
-}
-/*------------Pushing the word "STRICT" 80px to left of the word "POWER"---*/
-.text1 span:last-child {
-  padding-left: 80px;
-}
-
-/*---------------Sizing and positioning the word SIMONE - name of game in centre*/
-#title {
-  position: absolute;
-  font-size: 40px;
-  margin-left: 35px;
-  margin-top: 40px;
-}
 
 /*----------------------------- Turn Counter Positioning, Sizing & Styling*/
-#turn {
-  position: absolute;
-  background: #330000;
-  color: red;
-  font-family: courier;
-  font-size: 20px;
-  height: 30px;
-  width: 50px;
-  margin-left: 90px;
-  margin-top: 170px;
-  text-align: center;
-  vertical-align: middle;
-  line-height: 30px;
-}
+
 /*--------------------Thick, dark outer circle styling, sizing and positioning-----------------------*/
 #outer-circle {
-  background: #385a94;
+  background: #330000;
   border-radius: 50%;
-  margin: auto;
   margin-top: 100px;
   width: 500px;
   height: 500px;
   position: relative;
   border-style: solid;
-  border-width: 10px; 
   box-shadow: 8px 8px 15px 5px #888888;
 
 }
 
-/*---------------------All Quadrants cursor pointer ----------*/
-.quadrant {
-    cursor: pointer;
-}
+
 
 /*--------------------Sizing and styling of quadrants---------*/
 
 .quad_sizing {
     position: absolute;
+    cursor: pointer;
     height: 250px;
     width: 250px;
     top: 50%;
@@ -143,6 +100,7 @@ body {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
+    
 }
 
 /*--------------------------------------Green Quadrant----------*/
@@ -151,7 +109,7 @@ body {
   border-radius: 250px 0 0 0;
   -moz-border-radius: 250px 0 0 0;
   -webkit-border-radius: 250px 0 0 0;
-  background: darkgreen;
+  background: green;
   margin: -250px 0px 0px -250px;
   
 }
@@ -161,7 +119,7 @@ body {
   border-radius: 0 250px 0 0;
   -moz-border-radius: 0 250px 0 0;
   -webkit-border-radius: 0 250px 0 0;
-  background: darkred;
+  background: #b71c1c;
   margin: -250px 0px 0px 0px;
 
 }
@@ -171,7 +129,7 @@ body {
   border-radius: 0 0 0 250px;
   -moz-border-radius: 0 0 0 250px;
   -webkit-border-radius: 0 0 0 250px;
-  background: goldenrod;
+  background: #fbc02d;
   margin: 0px -250px 0px -250px;
  
 }
@@ -181,7 +139,7 @@ body {
   border-radius: 0 0 250px 0;
   -moz-border-radius: 0 0 250px 0;
   -webkit-border-radius: 0 0 250px 0;
-  background: darkblue;
+  background: #1565c0;
   margin: 0px 0px -250px 0px;
 
 }
@@ -202,12 +160,9 @@ body {
   -webkit-box-sizing: border-box;
 }
 
-/*----------------------------------Responsive Design-------------*/
-
-@media all and (max-width: 600px) {
-   body {
-       width: 70%;
-       height: 70%;
-   }
-
+@media only screen and (max-width: 600px) {
+  #outer-circle {
+    box-shadow: none;
+  }
 }
+
