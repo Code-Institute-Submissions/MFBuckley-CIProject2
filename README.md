@@ -91,7 +91,7 @@ Game currently not running beyond level 2. Play and check functions need to be l
 
 ## Deployment
 
-Github Pages.
+Github Pages. Full details on how to deploy a github repository to Github Pages may be found [here](https://help.github.com/en/github/working-with-github-pages/creating-a-github-pages-site).
 
 ## Credits
 
