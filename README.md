@@ -52,35 +52,24 @@ Increase the number of rounds that can be played overall.
 
 ## Testing
 
-[HTML Validator](https://validator.w3.org/)
+[HTML Validator](https://validator.w3.org/nu/#textarea)
 
 Validated by direct input.
 
-2 Warnings found: 
-
-"Consider adding a lang attribute to the html start tag to declare the language of this document."
+1 Warning found: 
 
 "The document is not mappable to XML 1.0 due to two consecutive hyphens in a comment."
 
-1 Error found:
+This warning occurs because of the format of comments in the html codein index.html.
+Comments are designed in this way to both separate blocks of code for easier reading and to explain what each block of code does.
+As the document will not be mapped to XML 1.0 - this warning is not a major issue here.
 
-"Stray end tag source."
 
 [CSS Validator](https://jigsaw.w3.org/css-validator/)
 
 Validated by direct input.
 
-1 Warning found:
-
-"This document appears to be written in English. Consider adding lang="en" (or variant) to the html start tag."
-
-2 Errors found:
-
-"Non-space characters found without seeing a doctype first. Expected DOCTYPE html tag."
-
-"Element head is missing a required instance of child element title."
-
-
+No errors found.
 
 
 
@@ -105,9 +94,6 @@ Youtube:
 
 ### Media
 
-Bell tones downloaded [here](https://freesound.org/).
+Audio tones are - Bell tones and were downloaded [here](https://freesound.org/).
 
-### Acknowledgements
 
-Thank you to my mentor Sindhu Kolli for all of her help trying to get my original project off the ground.
-We faltered on rendering to a localhost: 8000.
