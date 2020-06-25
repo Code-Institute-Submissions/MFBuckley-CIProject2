@@ -3,9 +3,9 @@
 ## User Story
 As a site editor I want to create a computerised version of a game of Simon - an interactive audio/visual game - to practice my coding skills and have a little fun. 
 The game begins when a series of tones and lights are generated randomly by the computer.
-A player is required to repeat the sequence correctly. 
+Once the cimputer has finished its audio/visual sequence, a player is required to repeat the sequence correctly. 
 If the player succeeds, each round becomes progressively longer and more complex.
-Depending on which mode is played, if the user fails, the game is over and the player must start all over again(strict mode) or in non-strict mode
+Depending on which mode is played, if the user fails, the game is over and the player must start all over again (strict mode) or in non-strict mode
 further attempts at the level are possible until successful.
 
 ## Game Instructions
@@ -26,14 +26,14 @@ in the correct order to make it to the next level.
 
 Strict mode causes the game to reset to the very start if an error is made by the player.
 
-Instructions modal button in top left corner of page.
+The instructions button in the top left corner can be clicked to reveal the simple rules of the game. Click on Close to close the instructions.
 
 ## Existing Features
 
 Audio/visual user interacton features via .wav files and "flashing" colored quadrants in a randomised sequence.
 Click buttons/quadrants allow users to start and play the game. Check boxes "power" the game on or 
 make the game a little more difficult by resetting to the start every time an error is made.
-Instructions button opens a text box to reveal the simple rules of the game.
+Instructions modal button in top left corner of page opens a text box containing the games instructions.
 
 
 ### Features left to implement
@@ -51,7 +51,10 @@ Increase the number of rounds that can be played overall.
     * for adding style to web documents.
 
 * [Javascript](https://www.javascript.com/)
-    * used for creating responsive, interactive web page, enhancing user experience.
+    * used for creating the interactive part of the web page, enhancing user experience.
+
+* [Materialize CSS](https://www.youtube.com/watch?v=gCZ3y6mQpW0)
+    *used for creating resposive webpage elements that adjust for screen size.
 
 ## Testing
 
@@ -74,10 +77,6 @@ Validated by direct input.
 
 No errors found.
 
-
-
-
-Game currently not running beyond level 2. Play and check functions need to be looked at again.
 
 ## Deployment
 
