@@ -3,12 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- Compiled and minified Materialize CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <title>Simone</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
@@ -17,70 +13,82 @@
 </head>
 
 <body>
-<!-------------------------------------Bell tones for audio pattern matching-->
-    <audio id="clip1">
-  	    <source src="assets/sounds/bicycle_bell.wav">
-    </audio>
-    <audio id="clip2">
-  	    <source src="assets/sounds/blizzard_bells.wav">
-    </audio>
-    <audio id="clip3">
-  	    <source src="assets/sounds/door_bell.wav">
-    </audio>
-    <audio id="clip4">
-  	    <source src="assets/sounds/hand_bell.wav">
-    </audio>
-<!-----------------------------------------------Modal button for instructions---->
-    <div class="container">
-        <button data-target="modal1" class="btn modal-trigger">Instructions</button>
+<div class="container text-center">
+    <div class="row">
+        <div class="col title">SIMONE</div>
+    </div>
+<!-- Button trigger modal for instructions -->
+    <div class="row">
+        <div class="col d-flex justify-content-center">
+            <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">Instructions</button>
 
- <!-----------Click to open and close instructions------------------------>  
-   
-        <div id="modal1" class="modal">
-            <div class="modal-content">
-                <p>Instructions:</p>
-                <ol>
-                    <li>Select "POWER" checkbox to load game.</li>
-                    <li>Click "START" button to begin.</li>
-                    <li>Repeat the sequence of tones/flashes correctly by clicking on the relevant quadrant 
+<!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Instructions</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <ol>
+                <li>Select "POWER" button to load game.</li>
+                <li>Click "START" button to begin.</li>
+                <li>Repeat the sequence of tones/flashes correctly by clicking on the relevant quadrant 
                     to win level and to move to next level.</li>
-                    <li>Failure to do so correctly and the level will have to be played again</li>
-                    <li>Selecting "STRICT" mode increases difficulty level. Failure of a level resets the game. The player has to start all over again.</li>
-                </ol>       
-            </div>
-            <div class="modal-footer">
-                <button data-target="modal1" class="btn modal-close">Close</button>
+                <li>Failure to do so correctly requires the level will have to be played again</li>
+                <li>Selecting "STRICT" mode increases difficulty level. Failure of a level resets the game. The player has to start all over again.</li>
+            </ol>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>        
+        </div>
+        </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+
+<!---On/Off buttons-->
+        <div class="row">
+            <div class="col mt-2 d-flex justify-content-center">     
+                <button type="button" class="btn btn-primary btn-sm mr-1">ON</button>
+                <button type="button" class="btn btn-danger btn-sm btn-right">OFF</button>         
             </div>
         </div>
+        </div>
+</div>   
+        
 
-<!---------------------Set Outer Circle, checkboxes, labelling, counter and quadrants-->
-    <div class="container center-align" id="outer-circle">
-        <div class="quad_sizing" id="topleft"></div>
-        <div class="quad_sizing" id="topright"></div>
-        <div class="quad_sizing" id="bottomleft"></div>
-        <div class="quad_sizing" id="bottomright"></div>
+<!---------------------Set out board, buttons, labelling, counter and quadrants-->
 
-        <div class="container" id="inner-circle">
-            <div class="center-align" id="title"><h4>SIMONE</h4></div>
-
+    <div class="row board">
+        <div class="col">
+            <div class="simonBoard">
+                <div id="0" class="pad green"></div>
+                <div id="1" class="pad red"></div>
+                <div id="2" class="pad yellow"></div>
+                <div id="3" class="pad blue"></div>           
+    
 <!------Toggle Switches to Power On/Off and apply strict mode ------------------------------>
-            <div class="switch center-align">
-                <label>Strict Mode Off<input type="checkbox">
-                    <span class="lever"></span>On    
-                </label>
+            <div class="row board-controls">
+                <div class="col">
+                    <div class="text-center" id="counter">00</div>       
+                <div class="col d-flex justify-content-center">
+                    <button type="button" class="btn btn-warning btn-sm mr-1">STRICT</button>    
+                    <button type="button" class="btn btn-success btn-sm">START</button>
+                </div>
             </div>
-            
-            <div class="switch center-align">
-                <label>Power Mode Off<input type="checkbox">
-                    <span class="lever"></span>On
-                </label>
-                <a class="waves-effect waves-light btn-small">Start</a>
-            </div>
-                        
         </div>
     </div>
-    </div>
+
 <!---------------------------------------------link to javascript file-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script  src="js/game.js"></script>
 
 </body>

@@ -1,168 +1,91 @@
 @import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
-
-
 body {
-    background-color: #333;
-    font-family: 'Electrolize', 'Courier New';
-    color: #333;
+  font-family: 'Electrolize', cursive;
+  color: black;
 }
 
-
-
-/*------------------------------Modal Instructions & Start Button Styling---------------*/
-
-.btn, .btn-small {
-    font-family: 'Electrolize', 'Courier New';
-    background-color: #c0c0c0;
-    border: 3px solid #d3d3d3;
-    text-align: center;
-    margin: 8px;
-    font-size: 1.5rem;
-    cursor: pointer;
-    color: #333;
-    
+.simonBoard {
+  margin: 0 auto;
+  margin-top: 50px;
+  border: solid 10px black;
+  width: 600px;
+  height: 600px;
+  border-radius: 600px;
+  box-shadow: -10px 10px 7px 0px rgba(50, 50, 50, 0.75);
 }
 
-.btn:hover, .btn-small:hover {
-    background-color: #e0e0e0;
-}
-
-/*------------Modal content i.e the instructions do not display initially--*/
-.modal-content {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    height: 40%;
-    width: 30%;
-    overflow: auto; /*----enables scrollbar if needed----*/
-    background-color: goldenrod;
-}
-
-
-/*---------------------clicking this button closes the game instructions*/
-.close-modal {
-    float: right;
-    cursor: pointer;
-    padding: 5px;
-    color: #ccc;
-}
-
-.close-modal:hover {
-    background-color:#333;
-}
-
-
-
-/*--------------------Power Mode Checkbox & Strict Mode Checkbox Positioning-- */
-.switch {
-    padding: 5px;
-}
-
-
-
-/*----------------------Styling labels "Power Mode" and "Strict Mode"--*/
-
-label {
-    color: #333;
-}
-
-
-/*----------------------------- Turn Counter Positioning, Sizing & Styling*/
-
-/*--------------------Thick, dark outer circle styling, sizing and positioning-----------------------*/
-#outer-circle {
-  background: #330000;
-  border-radius: 50%;
-  margin-top: 100px;
-  width: 500px;
-  height: 500px;
+.pad {
+  margin: 0;
+  float: left;
   position: relative;
-  border-style: solid;
-  box-shadow: 8px 8px 15px 5px #888888;
-
+  width: 290px;
+  height: 290px;
+  z-index: 8;
+  border: 5px solid black;
 }
 
-
-
-/*--------------------Sizing and styling of quadrants---------*/
-
-.quad_sizing {
-    position: absolute;
-    cursor: pointer;
-    height: 250px;
-    width: 250px;
-    top: 50%;
-    left: 50%;
-    border-style: solid;
-    border-width: 5px;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    
+.green {
+    background-color:#0a0;
+    -moz-border-radius: 300px 0 0 0;
+    border-radius: 300px 0 0 0;    
 }
 
-/*--------------------------------------Green Quadrant----------*/
-#topleft {
-  
-  border-radius: 250px 0 0 0;
-  -moz-border-radius: 250px 0 0 0;
-  -webkit-border-radius: 250px 0 0 0;
-  background: green;
-  margin: -250px 0px 0px -250px;
-  
+.green-active {
+  background-color: darkgreen !important;
 }
-/*----------------------------------------------Red Quadrant--------*/
-#topright {
- 
-  border-radius: 0 250px 0 0;
-  -moz-border-radius: 0 250px 0 0;
-  -webkit-border-radius: 0 250px 0 0;
-  background: #b71c1c;
-  margin: -250px 0px 0px 0px;
 
+.red {
+  background-color: red;
+  -moz-border-radius: 0 300px 0 0;
+  border-radius: 0 300px 0 0;
 }
-/*--------------------------------------Goldenrod QUadrant*/
-#bottomleft {
 
-  border-radius: 0 0 0 250px;
-  -moz-border-radius: 0 0 0 250px;
-  -webkit-border-radius: 0 0 0 250px;
-  background: #fbc02d;
-  margin: 0px -250px 0px -250px;
- 
+.red-active {
+  background-color: darkred !important;
 }
-/*-------------------------------Dark Blue Quadrant----------*/
-#bottomright {
 
-  border-radius: 0 0 250px 0;
-  -moz-border-radius: 0 0 250px 0;
-  -webkit-border-radius: 0 0 250px 0;
-  background: #1565c0;
-  margin: 0px 0px -250px 0px;
-
+.yellow {
+  background-color: yellow;
+  -moz-border-radius: 0 0 0 300px;
+  border-radius: 0 0 0 300px;
 }
-/*-----------------------------------Thick dark innercircle-----*/
-#inner-circle {
+
+.yellow-active {
+  background-color: #e6d47e !important;
+}
+
+.blue {
+  background-color: blue;
+  -moz-border-radius: 0 0 300px 0;
+  border-radius: 0 0 300px 0;
+}
+
+.blue-active {
+  background-color: darkblue !important;
+}
+
+.board-controls {
+  border: 15px solid black;
+  height: 245px;
+  width: 245px;
+  border-radius: 150px;
+  background-color: white;
+  clear: both;
   position: absolute;
-  background: grey;
-  border-radius: 50%;
-  height: 250px;
-  width: 250px;
-  border-style: solid;
-  border-width: 10px;
-  top: 50%;
-  left: 50%;
-  margin: -125px 0px 0px -125px;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
+  z-index: 10;
+  margin-top: 160px;
+  margin-left: 160px;
+  -webkit-box-shadow: -6px 8px 5px 0px rgba(50, 50, 50, 0.75);
 }
 
-@media only screen and (max-width: 600px) {
-  #outer-circle {
-    box-shadow: none;
-  }
+.text-center {
+  font-size: 45px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-weight: bold;
 }
+
+
+
+
 
