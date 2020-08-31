@@ -4,20 +4,14 @@ body {
   color: black;
 }
 
-.simonBoard {
-  margin: 0 auto;
-  margin-top: 50px;
-  border: solid 10px black;
+.simoneBoard {
   width: 600px;
   height: 600px;
-  border-radius: 600px;
-  box-shadow: -10px 10px 7px 0px rgba(50, 50, 50, 0.75);
 }
 
 .pad {
   margin: 0;
   float: left;
-  position: relative;
   width: 290px;
   height: 290px;
   z-index: 8;
@@ -64,25 +58,11 @@ body {
   background-color: darkblue !important;
 }
 
-.board-controls {
-  border: 15px solid black;
-  height: 245px;
-  width: 245px;
-  border-radius: 150px;
-  background-color: white;
-  clear: both;
-  position: absolute;
-  z-index: 10;
-  margin-top: 160px;
-  margin-left: 160px;
-  -webkit-box-shadow: -6px 8px 5px 0px rgba(50, 50, 50, 0.75);
-}
 
-.text-center {
+
+
+.title {
   font-size: 45px;
-  margin-top: 30px;
-  margin-bottom: 10px;
-  font-weight: bold;
 }
 
 

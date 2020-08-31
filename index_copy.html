@@ -13,18 +13,19 @@
 </head>
 
 <body>
-<div class="container-fluid">
+<div class="container">
     <div class="row">
-        <div class="col-12 text-center mt-4">
+        <div class="col-12 text-center">
             <p class="title">SIMONE</p>
         </div>
     </div>
-<!-- Button trigger modal for Instructions -->
+
+<!-- Button trigger modal for instructions -->
     <div class="row">
-        <div class="col-12 d-flex justify-content-center">
+        <div class="col d-flex justify-content-center">
             <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">Instructions</button>
 
-<!--Instructions Modal Logic and Content-->
+<!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -48,49 +49,35 @@
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>        
         </div>
         </div>
-        </div> 
-    </div>
-    </div>
-    </div>
-
-
-<!-- Buttons to Power On, Start and apply strict mode --->
-        <div class="row">
-            <div class="col mt-4 d-flex justify-content-center">     
-                <button type="button" class="btn btn-primary btn-sm mr-1">ON</button>
-                <button type="button" class="btn btn-success btn-sm mr-1" id="start">START</button>
-                <button type="button" class="btn btn-warning btn-sm" id="strict">STRICT</button>        
-            </div>
         </div>
+    </div>
+    </div>
+    </div>
 
-
-        <div class="row">
-            <div class="col-12 d-flex justify-content-center mt-4 mb-4">
-                <div class="counter">
-                    <p class="font-weight-bold">Level: 00</p> 
-                </div>
-            </div>
-        </div>
-
-   
         
+        </div>
+    </div>
 
-<!---------------------Set out board, buttons, labelling, counter and quadrants-->
-
+<!---On/Off buttons-->
     <div class="row">
-        <div class="col-12 rounded-circle d-flex justify-content-center">
+        <div class="col mt-2 d-flex justify-content-center">     
+            <button type="button" class="btn btn-primary btn-sm mr-1 mb-5">ON</button>
+            <button type="button" class="btn btn-danger btn-sm btn-right mb-5">OFF</button>         
+        </div>
+    </div>
+
+<!---------------------Set out board, start/strict buttons, counter and quadrants-->
+    <div class="row">
+        <div class="col-12">
             <div class="simoneBoard">
                 <div id="0" class="pad green"></div>
                 <div id="1" class="pad red"></div>
                 <div id="2" class="pad yellow"></div>
-                <div id="3" class="pad blue"></div> 
-            </div> 
-        </div>
-    </div>         
-            
-
-            
- 
+                <div id="3" class="pad blue"></div>
+                
+        
+    </div>
+</div>
 
 <!-----------Javascript-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

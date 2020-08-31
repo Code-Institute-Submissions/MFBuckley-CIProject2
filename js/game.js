@@ -2,7 +2,7 @@
 userSeq = [];
 simonSeq = [];
 const NUM_OF_LEVELS = 20;
-var id, color, level = 0;
+var id, color, counter = 0;
 var strict = false;
 var error = false;
 var gameOn = false //switch to turn game on or off 
@@ -15,12 +15,12 @@ var boardSound = [
 
 //1- start board sequence
 $(document).ready(function() {
-  $(".display").text("");
-  $(".start").click(function() {
+  $("#counter").text("");
+  $("#start").click(function() {
     strict = false;
     error = false;
-    level = 0;
-    level++;
+    counter = 0;
+    counter++;
     simonSeq = []
     userSeq = [];
     simonSequence();
@@ -35,8 +35,8 @@ $(document).ready(function() {
   
   //strict mode listener
   $(".strict").click(function() {
-    level = 0;
-    level++;
+    counter = 0;
+    counter++;
     simonSeq = []
     userSeq = [];
     strict = true;    
