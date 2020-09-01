@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
 
 body {
-    background: url(../images/simon-background.jpg) no-repeat center center fixed;
-    background-size: cover;
     font-family: 'Electrolize', cursive;
     color: black;  
 }
