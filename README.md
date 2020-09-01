@@ -7,8 +7,8 @@
  AS A | I WANT TO | SO THAT 
 :------ |:-----------: | ---------:
 Player | play an interactive game |  to have some fun
-Player | be presented with a random series of pad presses | for visual interaction
-Player | hear a sound that corresponds to each pad | for acoustic interaction
+Player | be presented with a random series of flashing quadrants/pads | for visual interaction
+Player | hear a sound that corresponds to each flash | for acoustic interaction
 Player | follow the sequence of both visual and acoustic stimuli | to repeat the pattern by manually clicking on pads
 Player | press pads in correct sequence | to win level, progress to next level and/or win game
 Player | be informed if I press incorrect sequence | to play level again
