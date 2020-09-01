@@ -1,21 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+
 body {
-  font-family: 'Electrolize', cursive;
-  color: black;
+    background: url(../images/simon-background.jpg) no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Electrolize', cursive;
+    color: black;  
 }
 
 .simoneBoard {
-  width: 600px;
-  height: 600px;
+    width: 600px;
+    height: 600px;
 }
 
 .pad {
-  margin: 0;
-  float: left;
-  width: 290px;
-  height: 290px;
-  z-index: 8;
-  border: 5px solid black;
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 50vw;
+    border: solid 5px #000;
+    max-width: 290px;
+    max-height: 290px;
+    cursor: pointer;
 }
 
 .green {

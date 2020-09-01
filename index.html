@@ -13,7 +13,7 @@
 </head>
 
 <body>
-<div class="container-fluid">
+<div class="container">
     <div class="row">
         <div class="col-12 text-center mt-4">
             <p class="title">SIMONE</p>
@@ -57,9 +57,10 @@
 <!-- Buttons to Power On, Start and apply strict mode --->
         <div class="row">
             <div class="col mt-4 d-flex justify-content-center">     
-                <button type="button" class="btn btn-primary btn-sm mr-1">ON</button>
-                <button type="button" class="btn btn-success btn-sm mr-1" id="start">START</button>
-                <button type="button" class="btn btn-warning btn-sm" id="strict">STRICT</button>        
+                <button type="button" class="btn btn-primary btn-sm mr-1" id="game-on">ON</button>
+                <button type="button" class="btn btn-success btn-sm mr-1" id="start-game">START</button>
+                <button type="button" class="btn btn-warning btn-sm mr-1" id="strict-mode">STRICT</button>
+                <button type="button" class="btn btn-danger btn-sm" id="game-off">OFF</button>        
             </div>
         </div>
 
@@ -75,7 +76,7 @@
    
         
 
-<!---------------------Set out board, buttons, labelling, counter and quadrants-->
+<!---------------------Set out board, counter and quadrants-->
 
     <div class="row">
         <div class="col-12 rounded-circle d-flex justify-content-center">
@@ -86,7 +87,45 @@
                 <div id="3" class="pad blue"></div> 
             </div> 
         </div>
-    </div>         
+    </div>  
+
+<!---You win level modal-->
+
+<div class="modal fade bd-example-modal-sm text-center" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <p class="win-level">You win! Next Level</p>
+        </div>
+    </div>       
+</div>
+
+<!--You win game modal-->
+<div class="modal fade bd-example-modal-sm text-center" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <p class="win-game">You won the game! Congrats!</p>
+        </div>
+    </div>       
+</div>
+
+<!--You lose level modal-->
+<div class="modal fade bd-example-modal-sm text-center" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <p class="lose-level">You lose! Play level again!</p>
+        </div>
+    </div>       
+</div>
+
+<!--You lose modal strict mode-->
+<div class="modal fade bd-example-modal-sm text-center" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <p class="lose-strict">You lose! Start game again!</p>
+        </div>
+    </div>       
+</div>
+
             
 
             
