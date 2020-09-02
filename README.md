@@ -132,6 +132,8 @@ Youtube:
 
 * [Source 2](https://www.youtube.com/watch?v=9MTR3V2XpRI). 
 
+* [jQuery](https://www.youtube.com/watch?v=3nrLc_JOF7k&list=PLillGF-RfqbYJVXBgZ_nA7FTAAEpp_IAc) refresher.
+
 Mozilla Developer Network explains jquery methods among others. e.g. [setInterval()](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval)
 
 
