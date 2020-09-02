@@ -12,12 +12,6 @@ var boardSound = [
 
 $(document).ready(function(){
 
-// Turn on game by clicking ON button
-    gameOn = $('#game-on').click(function(){
-        $('#game-on').css('background-color','#d9534f'),
-            $('#game-on').text('OFF');		    
-    });
-
 
 /* Start listener - start game by clicking START button which increases the level counter by 1 and 
 initialises computerSequence function below */
@@ -43,7 +37,7 @@ initialises computerSequence function below */
 
 /*Check for game winners */
 
-    if(playerSeq.length == NUM_LEVELS && playerSeq.length == NUM_LEVELS) {
+    if(playerSeq.length == NUM_LEVELS && compSeq.length == NUM_LEVELS) {
         $("#win-game").modal('show');      
     }
 
@@ -112,9 +106,19 @@ then remove this class using setTimeout function to return to original color and
 
 
 
-// Turn on strict mode by clicking strict button - text on button remains itali
+// Turn on strict mode by clicking strict button - text on button remains italic
 
-
+    $('strict-mode').click(function){
+        computerSequence();
+        level++;
+        if(playerSeq.length !== compSeq.length) {
+            playerSeq = [];
+            compSeq = [];
+            level = 0;
+        }
+        
+        
+    }
     
     
 					
