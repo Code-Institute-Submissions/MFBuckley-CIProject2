@@ -2,7 +2,12 @@
 
 body {
     font-family: 'Electrolize', cursive;
-    color: black;  
+    color: black; 
+    background: url("../assets/images/Night-Sky.png");
+}
+
+.counter p span {
+    font-size: 20px;
 }
 
 .simoneBoard {
