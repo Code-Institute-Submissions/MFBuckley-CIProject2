@@ -20,20 +20,18 @@ player | should be able to play on different screen sizes | for mobile phone pla
 ## Game Instructions
 
 Your task is to repeat the sequence of tones and lights played/shown by the computer 
-by clicking on the respective quadrants immediately after the computer has finished.
-
-1. Select checkbox "Power" to load game.
+by clicking on the respective quadrants immediately after the computer has finished its sequence.
 
 1. Click "Start" button.
 
 1. The computer will play a sequence of tones complementary to a sequece of flashing pads in the circle.
 
-1. When the computer has finished, repeat the sequence by clicking on the red, yellow, blue and green quadrants 
+1. When the computer has finished, repeat the sequence by clicking on the red, yellow, blue and green pads/quadrants 
 in the correct order to make it to the next level.
 
 1. Complete all 20 rounds to win the game.
 
-Strict mode causes the game to reset to the very start if an error is made by the player.
+Strict mode causes the game to reset to the very start i.e. level 1 if an error is made by the player.
 
 The instructions button at the top can be clicked to reveal the simple rules of the game. Click on Close to close the instructions.
 

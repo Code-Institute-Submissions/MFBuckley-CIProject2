@@ -3,7 +3,7 @@
 body {
     font-family: 'Electrolize', cursive;
     color: black; 
-    background: url("../assets/images/Night-Sky.png");
+    background: url("../assets/images/night-sky.png");
 }
 
 .counter p span {
