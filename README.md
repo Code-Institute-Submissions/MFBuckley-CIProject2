@@ -37,7 +37,7 @@ The instructions button at the top can be clicked to reveal the simple rules of 
 
 ## Features
 
-### Design Features
+### Existing Features
 
 #### 1. Landing page
 Kept as simple as possible with the game title at the top, followed by the instructions modal, 
@@ -60,10 +60,6 @@ The backgrond image is of the night sky.
 
 * Four colored pads red, green, blue yellow arranged in a circle and at right angles to one another 
 with a 5px black border separating each pad.
-
-### Existing Features
-
-
 
 ### Features left to implement
 
@@ -110,6 +106,14 @@ Validated by direct input.
 
 Validated by direct input.
 * No errors found.
+
+[Javascript Validator](http://beautifytools.com/javascript-validator.php)
+
+Validated by direct input.
+
+Played game multiple times to test game functionality. 
+Within javascript code itself there are multiple console.log()functions to print out what values are being generated in terms of ids, colors, 
+computer and player sequences selected as well as a check to see if the if statement to check player sequence completion is being implemented or not.
 
 
 ## Deployment
