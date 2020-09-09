@@ -1,5 +1,10 @@
 # Interactive Frontend Project - Milestone Project 2 - Code Institute, Dublin, Ireland
 
+Simon is an electronic game of memory skill invented by Ralph H. Baer and Howard J. Morrison, working with software programming by Lenny Cope. 
+The device creates a series of tones and lights and requires a user to repeat the sequence. If the user succeeds, the series becomes progressively longer and more complex. 
+Once the user fails they either play the level again or the game is over. 
+My goal here is to reproduce this game in a similar format as a computer game though with the variation that the game always resets to level 0 and has to be played completely from the beginning.
+
 ## UX
 
 ### User Stories
@@ -11,8 +16,7 @@ player | be presented with a random series of flashing quadrants/pads | for visu
 player | hear a sound that corresponds to each flash | for acoustic interaction
 player | follow the sequence of both visual and acoustic stimuli | to repeat the pattern by manually clicking on pads
 player | press pads in correct sequence | to win level, progress to next level and/or win game
-player | be informed if I press incorrect sequence | to play level again
-player | play in strict mode - if my sequence is incorrect I must start game from beginning | to increase difficulty level
+player | be informed if I press incorrect sequence | to play game again from beginning
 player | console should be very simplistic | for ease of use
 player | instructions should be available at the click of a button | so rules of games are clear.
 player | should be able to play on different screen sizes | for mobile phone play for example
@@ -31,8 +35,6 @@ in the correct order to make it to the next level.
 
 1. Complete all 20 rounds to win the game.
 
-Strict mode causes the game to reset to the very start i.e. level 1 if an error is made by the player.
-
 The instructions button at the top can be clicked to reveal the simple rules of the game. Click on Close to close the instructions.
 
 ## Features
@@ -50,11 +52,11 @@ The backgrond image is of the night sky.
 
 #### 3. Instructions modal
 
-* A Bootstrap modal containing instructions on how to play the game, winning and losing
+* A Bootstrap modal containing instructions on how to play the game, winning and losing.
 
-#### 4. Buttons On, Off, Start, Strict
+#### 4. Start button
 
-* Bootstrap buttons to power on the game then start, select strict mode or turn off as required.
+* Bootstrap button starts the game, the level counter increases by 1 and the computer sequence is called.
 
 #### 5. Simon Game pads/quadrants
 
@@ -68,7 +70,6 @@ with a 5px black border separating each pad.
 2. More than 20 levels with increasing difficulty levels.
 
 3. Add a timer and play against the clock.
-
 
 ## Technologies Used
 
@@ -115,6 +116,9 @@ Played game multiple times to test game functionality.
 Within javascript code itself there are multiple console.log()functions to print out what values are being generated in terms of ids, colors, 
 computer and player sequences selected as well as a check to see if the if statement to check player sequence completion is being implemented or not.
 
+## Bugs
+
+Pad clicks possible while computer sequence is playing - to be addressed at a later date.
 
 ## Deployment
 

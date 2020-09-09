@@ -4,7 +4,6 @@ const NUM_LEVELS = 20;
 var level = 0;
 var id;
 var color;
-var strict = false;
 var boardSound = [
   "https://www.soundjay.com/button/sounds/button-4.mp3", //green
   "https://www.soundjay.com/button/sounds/button-09.mp3", //red
@@ -20,30 +19,21 @@ $(document).ready(function() {
         computerSequence();
     })
 
-    $('#strict-mode').click(function(){
-        computerSequence();
-    })
-
-    $('.pad').click(function(){
+    $('.pad').click(function() {
         id = $(this).attr('id');
         playerSeq.push(id);
         color = $('#'+ (this.id)).attr('class').split(" ")[1];
         console.log(id+' '+color); // test colors/pads clicked by user
         addClassSound(id, color);
         console.log("Player Seq " + playerSeq.length);
-        console.log("Comp Seq " + compSeq.length);
+        console.log("Comp Seq " + compSeq.length); 
         // Check player sequence correct
         if(!checkPlayerCorrect()) {
             $('#lose-level').modal('show')
             playerSeq = [];
-            //$('#repeat-level').click(function(){
-
-           // })
-           if(strict=true){
-               $('#play-again').click(function(){
+            $('#play-again').click(function(){
                    location.reload();
-               })
-           }
+            })
         }
         // Checking if sequence completed by user 
         if(playerSeq.length == compSeq.length && playerSeq.length < NUM_LEVELS) {
@@ -55,10 +45,14 @@ $(document).ready(function() {
 
         // Check for game winners 
         if(playerSeq.length == NUM_LEVELS) {
-            $("#win-game").modal('show');      
+            $("#win-game").modal('show');
+            $('#reload-game').click(function(){
+                   location.reload();
+            })      
         }
     })
 })
+
 /*---------------------------------------------------------------Functions---*/
 // Player sequence versus computer sequence 
     function checkPlayerCorrect(){
@@ -72,6 +66,7 @@ $(document).ready(function() {
 
 // Computer generates a sequence of sounds and color 'flashes' 
     function computerSequence(){
+        $('#start-game').attr('disabled', true);
         console.log(level);
         $('#level-counter').text(level);
         getRandomNum();
@@ -81,7 +76,6 @@ $(document).ready(function() {
             color = $('#'+ (this.id)).attr('class').split(" ")[1];
             console.log(id+' '+color); //Check which colors and id's are being generated
             playSound(id);
-            //addClassSound(id, color);
             i++;
             if(i == compSeq.length) {
                 clearInterval(myInterval);
@@ -112,4 +106,7 @@ then remove this class using setTimeout function to return to original color and
         sound.play();
     }
 
+    
+
+    
 
